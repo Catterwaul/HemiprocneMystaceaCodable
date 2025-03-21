@@ -5,7 +5,7 @@ import PackageDescription
 
 _ = Package(
   name: "HemiprocneMystaceaCodable",
-  platforms: [.iOS(.v13), .macOS(.v15)],
+  platforms: [.iOS(.v17), .macOS(.v14)],
   products: [.library(name: .libraryName, targets: [.libraryName])],
   dependencies: [Module.ExternalDependency.Swift.docC.package]
   + Set(modules.flatMap(\.externalDependencies)).map(\.package),
